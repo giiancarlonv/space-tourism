@@ -22,7 +22,7 @@ export const Navbar =()=>{
         <img src={hamburger} alt='test' onClick={toggleMenu} className='burger-btn'/>
         <nav className={mobileNav >= 810 ? 'desktopNav' :'desktopNav-hidden'}>
           <ul> 
-            <li><Link to='/space-tourism' className={path === '/' ? 'active':''}>00 Home</Link></li>
+            <li><Link to='/space-tourism' className={path === '/space-tourism' ? 'active':''}>00 Home</Link></li>
             <li><Link to='/moon' className={ isActiveDestination ? 'active':''}>01 Destination</Link></li>
             <li><Link to='/mark' className={ isActiveCrew ? 'active':''}>02 Crew</Link></li>
             <li><Link to='/space-capsule' className={isTechActive ? 'active':''}>03 Technology</Link></li>
@@ -37,7 +37,7 @@ export const Navbar =()=>{
         </div>
         <nav>
           <ul> 
-            <li><Link to='/'>00 Home</Link></li>
+            <li><Link to='/space-tourism'>00 Home</Link></li>
             <li><Link to='/moon'>01 Destination</Link></li>
             <li><Link to='/mark'>02 Crew</Link></li>
             <li><Link to='/space-capsule'>03 Technology</Link></li>
